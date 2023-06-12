@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    padding: 10px;
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+}
+
+h1 {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: red;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: burlywood;
+}
