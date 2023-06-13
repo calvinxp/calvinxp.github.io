@@ -2,8 +2,8 @@
 <html>
     <title>A website?</title>
     <link rel="icon" href="/main/images/book_favicon.jpg">
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
 <body style="background-color: red;">
 
 <h1>This is a heading</h1>
