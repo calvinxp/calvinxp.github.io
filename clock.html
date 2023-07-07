@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Clock</title>
     <link rel="icon" href="images/book_favicon.jpg">
     <link rel="stylesheet" href="styles/styles.css">
     <meta charset="UTF-8">
-  <script>
-    function updateTime() {
-      var now = new Date();
-      var timeElement = document.getElementById('time');
-      timeElement.textContent = now.toLocaleTimeString();
-    }
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var timeElement = document.getElementById('time');
+            timeElement.textContent = now.toLocaleTimeString();
+        }
 
-    function updateDate() {
-      var now = new Date();
-      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-      var dateElement = document.getElementById('date');
-      dateElement.textContent = now.toLocaleDateString(undefined, options);
-    }
+        function updateDate() {
+            var now = new Date();
+            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var dateElement = document.getElementById('date');
+            dateElement.textContent = now.toLocaleDateString(undefined, options);
+        }
 
 
-    // Update the time every second
-    setInterval(updateTime, 10);
+        // Update the time every second
+        setInterval(updateTime, 10);
+        setInterval(updateDate, 1000);
 
-    window.addEventListener('DOMContentLoaded', updateTime);
-    window.addEventListener('DOMContentLoaded', updateDate);
-  </script>
+        window.addEventListener('DOMContentLoaded', updateTime);
+        window.addEventListener('DOMContentLoaded', updateDate);
+        
+    </script>
 </head>
+
 <body>
     <div class="navbar">
         <a class="nav-link" href="home.html">home</a>
         <a class="nav-active" href="clock.html">clock</a>
         <a class="nav-link" href="game.html">game</a>
-    </div> 
+    </div>
+
     <p class="clock" id="time"></p>
     <p class="clock" id="date"></p>
 </body>
+
 </html>
