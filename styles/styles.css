@@ -38,3 +38,11 @@ body {
     font-weight: bold;
 }
 
+.clock {
+    margin: 20px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+    color: #0040a0;
+}

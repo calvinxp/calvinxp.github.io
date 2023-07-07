@@ -12,8 +12,19 @@
       timeElement.textContent = now.toLocaleTimeString();
     }
 
+    function updateDate() {
+      var now = new Date();
+      var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      var dateElement = document.getElementById('date');
+      dateElement.textContent = now.toLocaleDateString(undefined, options);
+    }
+
+
     // Update the time every second
-    setInterval(updateTime, 1000);
+    setInterval(updateTime, 10);
+
+    window.addEventListener('DOMContentLoaded', updateTime);
+    window.addEventListener('DOMContentLoaded', updateDate);
   </script>
 </head>
 <body>
@@ -22,7 +33,7 @@
         <a class="nav-active" href="clock.html">clock</a>
         <a class="nav-link" href="game.html">game</a>
     </div> 
-    <h1>Current Time:</h1>
-    <p id="time"></p>
+    <p class="clock" id="time"></p>
+    <p class="clock" id="date"></p>
 </body>
 </html>
