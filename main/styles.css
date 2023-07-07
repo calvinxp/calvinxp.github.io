@@ -19,3 +19,8 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
     color: burlywood;
 }
+
+.text {
+    color: brown;
+    font-size: 100px;
+}
