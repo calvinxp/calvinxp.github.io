@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    padding: 0px;
+    background-color: #d0d0d0;
+}
+
+.navbar {
+    padding: 8px;
+    margin: 0px;
+    height: auto;
+    background: linear-gradient(to bottom, #444444, #222222);
+
+    display: flex;
+    justify-content: center;
+
+
+}
+.nav-link, .nav-active {
+    padding: 0px;
+    margin: 0px;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+    float: bottom;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #bbbbbb; 
+}
+
+.nav-active {
+    color: #eeeeee;
+    font-weight: bold;
+}
+
