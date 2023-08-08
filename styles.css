@@ -17,8 +17,13 @@ body {
     padding-right: 10px;
     /* background-color: rgb(178, 204, 32); */
     border-radius: 16px;
+    
+}
+
+.nav a {
     font-size: 36px;
     text-decoration: none;
+    color: bla;
 }
 
 .link-active, .link{
