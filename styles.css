@@ -18,6 +18,7 @@ body {
     /* background-color: rgb(178, 204, 32); */
     border-radius: 16px;
     font-size: 36px;
+    text-decoration: none;
 }
 
 .link-active, .link{
