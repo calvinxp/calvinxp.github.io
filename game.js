@@ -1,4 +1,4 @@
-consol.log("game.js")
+console.log("game.js")
 // class pos {
 //     constructor(x, y) {
 //         this.x = x;
