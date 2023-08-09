@@ -1,9 +1,10 @@
-class pos {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-    }
-}
+consol.log("game.js")
+// class pos {
+//     constructor(x, y) {
+//         this.x = x;
+//         this.y = y;
+//     }
+// }
 
 const canvas = document.getElementById("myCanvas"); // Get the canvas element
 const ctx = canvas.getContext("2d"); // Get the 2D rendering context
@@ -17,8 +18,11 @@ ctx.fillStyle = "lightblue"; // Set your desired background color
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 ctx.moveTo(50, 70);
-ctx.lineTo(50, 50);
+ctx.lineTo(50, 30);
 ctx.stroke();
+
+console.log("stuff")
+
 
 let keyMap = {};
 // let mouseX = 0;
@@ -26,8 +30,8 @@ let keyMap = {};
 
 let snakeHead = new pos(2, 0)
 let snakeBody = {};
-snake[0] = new pos(1, 0);
-snake[1] = new pos(0, 0);
+snakeBody[0] = new pos(1, 0);
+snakeBody[1] = new pos(0, 0);
 // let snakeTail = new pos(0, 0)
 
 window.addEventListener("keydown", function(event) {
@@ -60,9 +64,11 @@ document.addEventListener("mousemove", function(event) {
 // =============================================================
 // start of actual code
 
-function loop(time) {
+function loop() {
 
     // console.log(mouseX, mouseY);
+
+    console.log(snakeHead)
 
     let lastSnakeHead = snakeHead
 
