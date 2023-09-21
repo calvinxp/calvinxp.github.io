@@ -29,6 +29,7 @@
     border-radius: 6px;
     border: 3px solid rgb(214, 214, 214);
     transition: transform .2s;
+    
 }
 
 .clr:hover {
@@ -64,7 +65,7 @@ button {
     outline: none;
     /* padding: .6em 1em; */
     border-radius: 6px;
-    background-color: #03bb56;
+    background-color: #0f65d4;
     color: #fff;
     transition: transform .2s;
     user-select: none;
@@ -77,5 +78,9 @@ button:hover {
 
 
 .save {
-    background-color: #0f65d4;
+    background-color: #03bb56;
+}
+
+.clear {
+    background-color: red;
 }
