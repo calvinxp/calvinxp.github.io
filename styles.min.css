@@ -3,11 +3,10 @@ body {
   padding: 0;
   font-size: 14px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #848c8e;
+  /* background-color: #848c8e; */
   height: 100vh;
-  color: white; 
-  /* color: #dcf763; !important */
-
+  /* color: white;  */
+  color: #dcf763;
 }
 
 main {
@@ -19,6 +18,8 @@ main {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
+
   /* background-image: url("sequoianationalpark/IMG_6126.HEIC"); */
 }
 
@@ -31,7 +32,7 @@ main {
   text-align: center;
   color: #dcf763;
   text-decoration: none;
-  transition: margin-top .1s;
+  transition: margin-top 0.1s;
 }
 
 .navlink:hover {
@@ -86,11 +87,11 @@ footer {
 .side-panel {
   border-width: 0 1px 0 0;
 
-  width: 25vw;
+  width: 20vw;
 
   top: 60px;
   position: fixed;
-  margin-left: 10vw;
+  margin-left: 5vw;
   padding: 20px 0 0 20px;
 }
 
@@ -104,7 +105,7 @@ footer {
   padding: 20px 0 0 20px;
 
   margin-right: 10vw;
-  margin-left: calc(35vw + 20px);
+  margin-left: calc(25vw + 20px);
 }
 
 #email-link {
@@ -124,14 +125,18 @@ main {
   margin-bottom: 40px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
-.project-title {
-}
-.project-pictures {
+
+.section-box {
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
+  padding: 40px;
+}
 
+.project-title {
+}
+.project-pictures {
   /* justify-content: space-around;
   align-items: center; */
   /* display: flex;
@@ -157,8 +162,8 @@ h3 {
   margin: 10px;
   margin-left: 0;
   border-radius: 8px;
-  border: solid 1px rgb(0, 0, 0);
-  height: 16vw;
+  /* border: solid 1px rgb(0, 0, 0); */
+  height: 18vw;
 }
 
 .link {
