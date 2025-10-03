@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +14,12 @@ body {
 main {
   padding-top: 60px;
   display: flex;
+}
+
+h1,
+h2,
+h3 {
+  scroll-margin-top: 80px;
 }
 
 .bkg {
@@ -44,11 +54,12 @@ main {
   text-align: center;
   color: #dcf763;
   text-decoration: none;
-  transition: margin-top 0.1s;
+  display: inline-block;
+  transition: transform 0.1s;
 }
 
 .navlink:hover {
-  margin-top: 0;
+  transform: translateY(-10px);
 }
 
 footer {
@@ -93,6 +104,12 @@ footer {
   font-size: 16px;
   text-decoration: none;
   color: #dcf763;
+  transition: transform 0.1s;
+  display: inline-block;
+}
+
+.side-panel-link:hover {
+  transform: translateX(10px);
 }
 
 .main-content {
