@@ -3,9 +3,7 @@ body {
   padding: 0;
   font-size: 14px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* background-color: #848c8e; */
   height: 100vh;
-  /* color: white;  */
   color: #dcf763;
 }
 
@@ -19,8 +17,6 @@ main {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-
-  /* background-image: url("sequoianationalpark/IMG_6126.HEIC"); */
 }
 
 .navlink {
@@ -95,6 +91,12 @@ footer {
   padding: 20px 0 0 20px;
 }
 
+.side-panel-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .side-panel-link {
   font-size: 16px;
   text-decoration: none;
@@ -157,6 +159,10 @@ h3 {
 
 .small-break {
   height: 30px;
+}
+
+.mini-break {
+  height: 15px;
 }
 .project-image {
   margin: 10px;
